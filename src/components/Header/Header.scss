@@ -1,0 +1,39 @@
+@import '../../styles/app';
+
+.app-header.navbar {
+  height: $navbar-height;
+  
+  
+  box-shadow: var(--navbar-shadow);
+  transition: $transition-base;
+  border: none;
+  font-weight: 500;
+  background: #10569c;
+  .nav {
+    height: 100%;
+    padding: 0;
+
+    .nav-item {
+      .nav-link, .nav-link > a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+       
+        color: red;
+
+        @include hover {
+          color: $navbar-link-hover-color;
+          background: $navbar-link-hover-bg;
+          text-decoration: none;
+        }       
+      }
+    }
+  }
+
+
+
+
+}
+
+
